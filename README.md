@@ -1,2 +1,3 @@
-# prux
-Flexible pruning toolbox for JAX ecosystem.
+# Prux
+
+In the works.
