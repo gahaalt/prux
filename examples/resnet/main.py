@@ -18,5 +18,5 @@ params = model.init(rng, jnp.ones((1, 32, 32, 3)))
 
 # %%
 
-masks = criterion.RandomCriterion().get_masks(parameters=params, sparsity=0.2, globally=False, key=rng)
-params = pruning.Pruning().apply(parameters=params, masks=masks, exclude=["BatchNorm"])
+masks = criterion.RandomCriterion.get_masks(parameters=params, sparsity=0.2, globally=False, key=rng)
+params = pruning.Pruning.apply(parameters=params, masks=masks, exclude=["BatchNorm"])
